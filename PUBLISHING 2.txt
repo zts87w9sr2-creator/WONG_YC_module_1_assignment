@@ -1,0 +1,13 @@
+GitHub Pages 一次性設定
+
+1. 把更新包內容放入原網站根目錄，與原有 css、js、data、images、tiles 資料夾並列。必須保留原有資源；本包不是單獨的完整網站。
+2. 上傳的是解壓後的網站檔案，不是只上傳 zip。index.html 必須位於實際發布目錄最上層。
+3. 在發布目錄保留空白的 .nojekyll 檔案，確保 data/_23.js、data/_24.js 等以下劃線開頭的靜態檔案不會被 Jekyll 排除。Mac Finder 可能隱藏此檔；如上傳時未帶入，可在 GitHub 的 Add file → Create new file 建立名為 .nojekyll 的檔案。
+4. 倉庫 Settings → Pages → Build and deployment，選擇實際網站所在的 branch 和 folder（例如 main / root）。如果倉庫已有正確的 Pages 工作流程，沿用它，不需要重建。
+5. 等候發布完成，使用 Pages 頁面提供的 Visit site 網址。不要分享 localhost、127.0.0.1、file:// 或電腦上的檔案路徑。
+6. 訪客直接開這個 https 網址即可，不需 Start、Python 或 Mac。網址也可以直接帶 ?lang=en，或 stories.html?place=hau&lang=zh，或 index.html?photo=B16P01&lang=zh。
+
+若上線後出現404，先核對：發布來源目錄、index.html 所在層級、.nojekyll 是否存在、檔名大小寫及原有資源是否完整。不要把本機網址當作已發布網址。
+
+官方說明：
+https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site

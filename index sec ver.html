@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="strict-origin-when-cross-origin"><title>東涌影像檔案｜Box B16</title>
+<link rel="stylesheet" href="css/leaflet.css"><link rel="stylesheet" href="css/MarkerCluster.css"><link rel="stylesheet" href="css/MarkerCluster.Default.css">
+<style>
+:root{--ink:#233b36;--muted:#67766e;--line:#dce3dc;--paper:#fff;--accent:#286354;--soft:#f2f5ef}*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC",sans-serif}button,select,input{font:inherit;color:inherit}button,a,select{touch-action:manipulation}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #d4903e;outline-offset:3px}button{background:#fff;border:1px solid var(--line);border-radius:6px;padding:7px 12px}button:hover{background:var(--soft)}.app{height:100vh;height:100dvh;display:flex;flex-direction:column;padding:24px 30px 12px;gap:16px}.masthead{display:flex;justify-content:space-between;align-items:center;gap:20px}.eyebrow{font-size:11px;letter-spacing:.19em;color:var(--accent);font-weight:700}.masthead h1{font-family:"Songti TC","Noto Serif TC",serif;font-size:31px;letter-spacing:.08em;margin:3px 0}.masthead p{margin:0;color:var(--muted);font-size:13px}.head-actions{display:flex;gap:8px;align-items:center}.box-tag{font-size:12px;border:1px solid var(--line);padding:9px 12px;white-space:nowrap}.workspace{flex:1;min-height:0;display:grid;grid-template-columns:330px minmax(0,1fr);border:1px solid var(--line)}.sidebar{min-height:0;display:flex;flex-direction:column;border-right:1px solid var(--line);background:#fff}.filter-area{padding:16px;border-bottom:1px solid var(--line)}.filter-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.filter-top strong{font-size:16px}.text-btn{border:0;background:none;color:var(--accent);font-size:12px;padding:3px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}.fields label{font-size:12px;color:var(--muted)}select,input[type=search]{width:100%;height:37px;background:#fff;border:1px solid #ccd7ce;border-radius:4px;margin-top:4px;padding:4px 7px;font-size:13px}input[type=search]{margin-top:12px}.unknown-option{display:flex;gap:7px;align-items:center;font-size:12px;margin-top:10px}.result-line{padding:10px 16px;background:var(--soft);font-size:12px;display:flex;justify-content:space-between;align-items:center}.cards{overflow:auto;flex:1;padding:0 16px}.card{padding:13px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:76px minmax(0,1fr);gap:11px}.thumb{width:76px;height:76px;padding:0;border:0;border-radius:3px;background:var(--soft);overflow:hidden}.thumb img{width:100%;height:100%;object-fit:cover;display:block}.record-id{font-size:11px;letter-spacing:.04em;color:var(--accent);font-weight:700}.card-title{display:block;text-align:left;border:0;padding:0;background:none;font-size:13px;line-height:1.5;margin:3px 0}.card-bottom{display:flex;gap:7px;align-items:center;margin-top:5px}.badge{display:inline-flex;gap:5px;align-items:center;font-size:10px;color:var(--muted)}.badge i,.legend-dot{display:inline-block;width:8px;height:8px;border-radius:50%;flex-shrink:0}.locate{padding:1px 6px;font-size:10px}.map-column{min-width:0;min-height:0;position:relative;display:flex;flex-direction:column}.map-toolbar{padding:9px 13px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:8px;font-size:12px}.map-toolbar button{padding:4px 9px;font-size:12px}#map{width:100%;flex:1;min-height:200px;background:#e9eee8}.map-caption{padding:7px 12px;border-top:1px solid var(--line);font-size:11px;color:var(--muted);background:white}.legend{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:3px}.legend span{display:inline-flex;align-items:center;gap:5px}.legend-dot.diamond{border-radius:0;transform:rotate(45deg)}.legend-dot.pentagon{border-radius:0;clip-path:polygon(50% 0,100% 38%,80% 100%,20% 100%,0 38%)}.footer{font-size:10px;color:var(--muted);display:flex;justify-content:space-between;gap:10px}.layers-control{background:white;padding:8px 10px;border:1px solid #ccd7ce;border-radius:5px;box-shadow:0 1px 6px #2342;color:var(--ink);max-width:285px;max-height:65vh;overflow:auto;font:12px/1.6 -apple-system,BlinkMacSystemFont,"PingFang TC",sans-serif}.layers-control summary{cursor:pointer;font-weight:600}.layer-options{padding-top:6px}.layer-options label{display:flex;align-items:center;gap:6px;padding:3px 0}.layer-options details{margin-top:6px}.layer-options small{display:block;color:var(--muted);font-size:10px}.layer-options input[type=range]{width:100%}.tile-list{display:grid;grid-template-columns:1fr 1fr;padding-left:8px;font-size:10px}.symbol{background:transparent;border:0}.pin{display:block;width:14px;height:14px;border:1.5px solid #fff;box-shadow:0 0 0 1px #233b3670;border-radius:50%;background:#1f78b4}.pin.approx{background:#d12ed7;border-radius:1px;transform:rotate(45deg)}.pin.village{background:#e67e22;border-radius:0;clip-path:polygon(50% 0,100% 38%,80% 100%,20% 100%,0 38%)}.popup-mini{font-size:12px;max-width:280px}.popup-mini h3{font-size:14px;margin:6px 0}.popup-mini img{max-width:100%;max-height:180px;display:block;margin:8px auto;object-fit:contain}.popup-mini button{margin-top:6px}.leaflet-popup-content{margin:13px!important}.leaflet-control-attribution{font-size:10px!important}.leaflet-control-attribution a{color:#286354}.notice{position:absolute;left:55px;right:55px;top:60px;z-index:900;background:#fff8e9;border:1px solid #e9c477;padding:10px;font-size:12px;box-shadow:0 2px 8px #0002}.notice[hidden]{display:none}dialog{border:1px solid var(--line);padding:0;border-radius:8px;max-width:1050px;width:calc(100% - 40px);max-height:90vh;color:var(--ink);background:white}dialog::backdrop{background:#172a25aa}.dialog-head{display:flex;justify-content:space-between;align-items:center;padding:13px 20px;border-bottom:1px solid var(--line);gap:12px}.dialog-head h2{font-size:17px;margin:0}.record-body{display:grid;grid-template-columns:1.15fr 1fr;max-height:calc(90vh - 65px);overflow:auto}.photo-area{padding:22px;background:#f1f3ef;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0}.photo-area img{max-width:100%;max-height:62vh;object-fit:contain}.photo-area a{color:var(--accent);margin-top:10px;font-size:12px}.metadata{padding:22px;min-width:0}.metadata h3{font-size:20px;line-height:1.5;margin:5px 0 12px}.uncertainty{font-size:13px;background:#f7f2e8;border-left:3px solid #b48c4c;padding:12px;margin:12px 0}.meta-table{width:100%;border-collapse:collapse;font-size:12px}.meta-table th,.meta-table td{text-align:left;vertical-align:top;padding:6px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}.meta-table th{width:32%;padding-right:12px;color:var(--muted);font-weight:500}.method-body{padding:20px 26px;max-width:780px;margin:auto;font-size:14px}.method-body h3{margin:18px 0 5px}.method-body p{margin:5px 0 14px}.method-body a{color:var(--accent)}.empty{padding:30px 0;color:var(--muted);font-size:13px}.image-missing{font-size:12px;color:#795c31;padding:10px}.mobile-list{display:none}
+@media(min-width:1500px){.app{padding:30px 44px 15px}.workspace{grid-template-columns:370px minmax(0,1fr)}}
+@media(max-width:760px){.app{height:auto;min-height:100dvh;padding:14px 12px 10px;gap:12px}.masthead{align-items:flex-start}.masthead h1{font-size:24px}.masthead p{font-size:11px}.eyebrow{font-size:9px;letter-spacing:.1em}.box-tag{display:none}.head-actions button{padding:6px;font-size:11px}.workspace{display:flex;flex-direction:column}.map-column{order:0;height:54vh;min-height:340px}.sidebar{order:1;border-right:0;border-top:1px solid var(--line)}.cards{max-height:470px;overflow:auto}.filter-area{padding:12px}.map-toolbar{font-size:11px;padding:7px}.map-caption{font-size:10px}.legend{gap:8px}.footer{font-size:9px}.record-body{display:block}.photo-area{padding:15px}.photo-area img{max-height:40vh}.metadata{padding:16px}.layers-control{max-height:35vh;max-width:245px}.notice{left:12px;right:12px;top:54px}.dialog-head{padding:10px 14px}.dialog-head h2{font-size:14px}.method-body{padding:16px}}
+</style></head><body>
+<div class="app"><header class="masthead"><div><div class="eyebrow">TUNG CHUNG · PHOTO ARCHIVE · BOX B16</div><h1>東涌影像檔案</h1><p>從照片閱讀地方：宗教、日常生活與空間記憶 · 有日期記錄涵蓋1991–1992年</p></div><div class="head-actions"><span class="box-tag">36 張照片 · 30 筆已定位 · 6 筆未定位</span><button id="method-open">關於與定位方法</button></div></header>
+<main class="workspace"><aside class="sidebar" aria-label="照片篩選與清單"><div class="filter-area"><div class="filter-top"><strong>瀏覽照片</strong><button class="text-btn" id="reset">重設篩選</button></div><div class="fields"><label>地點<select id="site-filter"><option value="">全部地點</option></select></label><label>主題<select id="subject-filter"><option value="">全部主題</option></select></label></div><input id="search" type="search" placeholder="搜尋照片編號、描述或拍攝者" aria-label="搜尋照片"><label class="unknown-option"><input id="unknown-only" type="checkbox">只看未定位照片</label></div><div class="result-line"><span id="result-count" role="status" aria-live="polite"></span><button id="fit-filtered" class="text-btn">顯示結果範圍</button></div><div id="cards" class="cards"></div></aside>
+<section class="map-column" aria-label="照片互動地圖"><div class="map-toolbar"><span>照片地圖 <span id="map-count"></span></span><button id="fit-all">全部照片位置</button></div><div id="map" aria-label="東涌照片地圖"></div><div id="tile-notice" class="notice" hidden>底圖暫時無法載入。照片清單仍可使用；若以本機檔案開啟，請改用網站網址或本機 HTTP 預覽。<button id="dismiss-notice" class="text-btn">關閉</button></div><div class="map-caption"><div class="legend"><span><i class="legend-dot" style="background:#1f78b4"></i>建築／場地代表點</span><span><i class="legend-dot diamond" style="background:#d12ed7"></i>推估位置</span><span><i class="legend-dot pentagon" style="background:#e67e22"></i>村落概略代表點</span><span>未定位照片保留於清單</span></div>數字圓圈表示聚合照片；點擊放大，重疊位置可展開逐張選取。現代線面僅供位置參考。</div></section></main>
+<footer class="footer"><span>ANTH3323B · Module 1 · 整理：王羽彤</span><span>日期與定位限制依原記錄保留；空白資料不作補推。</span></footer></div>
+<dialog id="record-dialog" aria-labelledby="record-dialog-title"><div class="dialog-head"><h2 id="record-dialog-title">照片記錄</h2><button id="record-close" aria-label="關閉照片">關閉 ×</button></div><div id="record-body" class="record-body"></div></dialog>
+<dialog id="method-dialog" aria-labelledby="method-title"><div class="dialog-head"><h2 id="method-title">關於檔案與定位方法</h2><button id="method-close">關閉 ×</button></div><div class="method-body"><p>本網站整理 Box B16 的36張東涌照片，以地點、主題及定位依據連結照片與地圖。地圖標記有助辨認地點，不能一律視為攝影者當時站立的位置。</p><h3>如何閱讀定位</h3><p>建築／場地代表點：多張照片可能共用一個廟宇、建築或場地座標。推估位置：依照片背景或附近地標估計。村落概略代表點：僅表示村落大概位置，不代表住所或村界。6筆未定位記錄未放上地圖，仍完整保留於照片清單。</p><h3>不同時間的資料</h3><p>照片有日期記錄涵蓋1991–1992年；缺日期的照片保持未記錄。1982航空影像早於照片拍攝時期，只供環境對照。現代 OpenStreetMap、建築輪廓及參考路段均不能直接證明1992年的建築範圍、道路走向或拍攝路線。</p><h3>來源與判讀限制</h3><p>照片及原始描述以課程提供的 Box B16 資料為基礎，分類與定位由整理者補充。每筆照片均保留定位來源及不確定性說明。地圖來源包括 OpenStreetMap；1982航空影像由使用者提供，標示為地政總署 DOP5000-1982（局部覆蓋）。其他9-…圖幅的版次及年份未於匯出資料中確認，不用來推定歷史年代。</p><p><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap 資料及授權</a> · <a href="https://www.landsd.gov.hk/en/survey-mapping/mapping/aerial-photo-photogrammetric-products/digital-orthophoto.html" target="_blank" rel="noopener">地政總署數碼正射影像產品</a></p><h3>使用方式</h3><p>地點與主題篩選可同時使用，照片清單與地圖會同步更新。點選照片可閱讀完整記錄；「地圖」按鈕會移至該照片的代表位置。右上角「圖層與影像」可開關現代參考線面、1982航空影像及其他參考圖幅。</p></div></dialog>
+<script src="js/leaflet.js"></script><script src="js/leaflet.markercluster.js"></script><script src="data/B16_archiveb16_metadata_updated_utf8_22.js"></script><script src="data/_23.js"></script><script src="data/_24.js"></script>
+<script>
+'use strict';
+var map=L.map('map',{maxZoom:20,minZoom:3,zoomControl:true});
+var bounds_group=L.featureGroup();
+        map.createPane('pane_9SEB_0');
+        map.getPane('pane_9SEB_0').style.zIndex = 400;
+        var img_9SEB_0 = 'data/9SEB_0.png';
+        var img_bounds_9SEB_0 = [[22.273666401328807,113.93408524462212],[22.300808410150857,113.9705172786357]];
+        var layer_9SEB_0 = new L.imageOverlay(img_9SEB_0,
+                                              img_bounds_9SEB_0,
+                                              {pane: 'pane_9SEB_0', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_9SEB_0);
+        map.createPane('pane_9NEC_1');
+        map.getPane('pane_9NEC_1').style.zIndex = 401;
+        var img_9NEC_1 = 'data/9NEC_1.png';
+        var img_bounds_9NEC_1 = [[22.300699516681426,113.89763921652926],[22.327849597792618,113.93408524462212]];
+        var layer_9NEC_1 = new L.imageOverlay(img_9NEC_1,
+                                              img_bounds_9NEC_1,
+                                              {pane: 'pane_9NEC_1', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_9NEC_1);
+        map.createPane('pane_9SEC_2');
+        map.getPane('pane_9SEC_2').style.zIndex = 402;
+        var img_9SEC_2 = 'data/9SEC_2.png';
+        var img_bounds_9SEC_2 = [[22.246516297786957,113.89774686844221],[22.273666401328807,113.93417871714662]];
+        var layer_9SEC_2 = new L.imageOverlay(img_9SEC_2,
+                                              img_bounds_9SEC_2,
+                                              {pane: 'pane_9SEC_2', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_9SEC_2);
+        map.createPane('pane_9SEC_3');
+        map.getPane('pane_9SEC_3').style.zIndex = 403;
+        var img_9SEC_3 = 'data/9SEC_3.png';
+        var img_bounds_9SEC_3 = [[22.246516297786957,113.89774686844221],[22.273666401328807,113.93417871714662]];
+        var layer_9SEC_3 = new L.imageOverlay(img_9SEC_3,
+                                              img_bounds_9SEC_3,
+                                              {pane: 'pane_9SEC_3', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_9SEC_3);
+        map.createPane('pane_9SED_4');
+        map.getPane('pane_9SED_4').style.zIndex = 404;
+        var img_9SED_4 = 'data/9SED_4.png';
+        var img_bounds_9SED_4 = [[22.246574667863168,113.93413201704129],[22.27371669879668,113.97055697747854]];
+        var layer_9SED_4 = new L.imageOverlay(img_9SED_4,
+                                              img_bounds_9SED_4,
+                                              {pane: 'pane_9SED_4', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_9SED_4);
+        map.createPane('pane_9SEA_5');
+        map.getPane('pane_9SEA_5').style.zIndex = 405;
+        var img_9SEA_5 = 'data/9SEA_5.png';
+        var img_bounds_9SEA_5 = [[22.273607952312364,113.89769308407159],[22.300758044667496,113.93413201704129]];
+        var layer_9SEA_5 = new L.imageOverlay(img_9SEA_5,
+                                              img_bounds_9SEA_5,
+                                              {pane: 'pane_9SEA_5', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_9SEA_5);
+        map.createPane('pane_9NED_6');
+        map.getPane('pane_9NED_6').style.zIndex = 406;
+        var img_9NED_6 = 'data/9NED_6.png';
+        var img_bounds_9NED_6 = [[22.300758044667496,113.93403839982675],[22.327900031316798,113.97047751826544]];
+        var layer_9NED_6 = new L.imageOverlay(img_9NED_6,
+                                              img_bounds_9NED_6,
+                                              {pane: 'pane_9NED_6', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_9NED_6);
+        map.createPane('pane_9NED_7');
+        map.getPane('pane_9NED_7').style.zIndex = 407;
+        var img_9NED_7 = 'data/9NED_7.png';
+        var img_bounds_9NED_7 = [[22.300758044667496,113.93403839982675],[22.327900031316798,113.97047751826544]];
+        var layer_9NED_7 = new L.imageOverlay(img_9NED_7,
+                                              img_bounds_9NED_7,
+                                              {pane: 'pane_9NED_7', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_9NED_7);
+        map.createPane('pane_9NWD_8');
+        map.getPane('pane_9NWD_8').style.zIndex = 408;
+        var img_9NWD_8 = 'data/9NWD_8.png';
+        var img_bounds_9NWD_8 = [[22.30063282630422,113.86124016330477],[22.32779099080749,113.89769308407159]];
+        var layer_9NWD_8 = new L.imageOverlay(img_9NWD_8,
+                                              img_bounds_9NWD_8,
+                                              {pane: 'pane_9NWD_8', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_9NWD_8);
+        map.createPane('pane_9NWB_9');
+        map.getPane('pane_9NWB_9').style.zIndex = 409;
+        var img_9NWB_9 = 'data/9NWB_9.png';
+        var img_bounds_9NWB_9 = [[22.327724210473164,113.86117917907954],[22.354882374603967,113.89763921652926]];
+        var layer_9NWB_9 = new L.imageOverlay(img_9NWB_9,
+                                              img_bounds_9NWB_9,
+                                              {pane: 'pane_9NWB_9', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_9NWB_9);
+        map.createPane('pane_9NEB_10');
+        map.getPane('pane_9NEB_10').style.zIndex = 410;
+        var img_9NEB_10 = 'data/9NEB_10.png';
+        var img_bounds_9NEB_10 = [[22.327849597792618,113.93399148259267],[22.354991562208063,113.97043769631469]];
+        var layer_9NEB_10 = new L.imageOverlay(img_9NEB_10,
+                                              img_bounds_9NEB_10,
+                                              {pane: 'pane_9NEB_10', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_9NEB_10);
+        map.createPane('pane_9NWD_11');
+        map.getPane('pane_9NWD_11').style.zIndex = 411;
+        var img_9NWD_11 = 'data/9NWD_11.png';
+        var img_bounds_9NWD_11 = [[22.30063282630422,113.86124016330477],[22.32779099080749,113.89769308407159]];
+        var layer_9NWD_11 = new L.imageOverlay(img_9NWD_11,
+                                              img_bounds_9NWD_11,
+                                              {pane: 'pane_9NWD_11', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_9NWD_11);
+        map.createPane('pane_9SWB_12');
+        map.getPane('pane_9SWB_12').style.zIndex = 412;
+        var img_9SWB_12 = 'data/9SWB_12.png';
+        var img_bounds_9SWB_12 = [[22.273541351858736,113.86130105348182],[22.300699516681426,113.89774686844221]];
+        var layer_9SWB_12 = new L.imageOverlay(img_9SWB_12,
+                                              img_bounds_9SWB_12,
+                                              {pane: 'pane_9SWB_12', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_9SWB_12);
+        map.createPane('pane_9NEA_13');
+        map.getPane('pane_9NEA_13').style.zIndex = 413;
+        var img_9NEA_13 = 'data/9NEA_13.png';
+        var img_bounds_9NEA_13 = [[22.32779099080749,113.89758526574336],[22.354941060617644,113.93403839982675]];
+        var layer_9NEA_13 = new L.imageOverlay(img_9NEA_13,
+                                              img_bounds_9NEA_13,
+                                              {pane: 'pane_9NEA_13', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_9NEA_13);
+        map.createPane('pane_9SWD_14');
+        map.getPane('pane_9SWD_14').style.zIndex = 414;
+        var img_9SWD_14 = 'data/9SWD_14.png';
+        var img_bounds_9SWD_14 = [[22.246449787223444,113.86136184969186],[22.273607952312364,113.8978005697128]];
+        var layer_9SWD_14 = new L.imageOverlay(img_9SWD_14,
+                                              img_bounds_9SWD_14,
+                                              {pane: 'pane_9SWD_14', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_9SWD_14);
+        map.createPane('pane_82D9SEA00_15');
+        map.getPane('pane_82D9SEA00_15').style.zIndex = 415;
+        var img_82D9SEA00_15 = 'data/82D9SEA00_15.png';
+        var img_bounds_82D9SEA00_15 = [[22.273609860142958,113.89769102631207],[22.300759952953218,113.93412996017086]];
+        var layer_82D9SEA00_15 = new L.imageOverlay(img_82D9SEA00_15,
+                                              img_bounds_82D9SEA00_15,
+                                              {pane: 'pane_82D9SEA00_15', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_82D9SEA00_15);
+        map.createPane('pane_82D9SEB00_16');
+        map.getPane('pane_82D9SEB00_16').style.zIndex = 416;
+        var img_82D9SEB00_16 = 'data/82D9SEB00_16.png';
+        var img_bounds_82D9SEB00_16 = [[22.273668309625048,113.93408318735082],[22.300810318902073,113.9705152222537]];
+        var layer_82D9SEB00_16 = new L.imageOverlay(img_82D9SEB00_16,
+                                              img_bounds_82D9SEB00_16,
+                                              {pane: 'pane_82D9SEB00_16', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_82D9SEB00_16);
+        map.createPane('pane_82D9SWD00_17');
+        map.getPane('pane_82D9SWD00_17').style.zIndex = 417;
+        var img_82D9SWD00_17 = 'data/82D9SWD00_17.png';
+        var img_bounds_82D9SWD00_17 = [[22.246451694599383,113.86135979184743],[22.273609860142958,113.8977985127559]];
+        var layer_82D9SWD00_17 = new L.imageOverlay(img_82D9SWD00_17,
+                                              img_bounds_82D9SWD00_17,
+                                              {pane: 'pane_82D9SWD00_17', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_82D9SWD00_17);
+        map.createPane('pane_82D9SWB00_18');
+        map.getPane('pane_82D9SWB00_18').style.zIndex = 418;
+        var img_82D9SWB00_18 = 'data/82D9SWB00_18.png';
+        var img_bounds_82D9SWB00_18 = [[22.273543259222933,113.86129899523503],[22.30070142450089,113.8977448110843]];
+        var layer_82D9SWB00_18 = new L.imageOverlay(img_82D9SWB00_18,
+                                              img_bounds_82D9SWB00_18,
+                                              {pane: 'pane_82D9SWB00_18', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_82D9SWB00_18);
+        map.createPane('pane_82D9SED00_19');
+        map.getPane('pane_82D9SED00_19').style.zIndex = 419;
+        var img_82D9SED00_19 = 'data/82D9SED00_19.png';
+        var img_bounds_82D9SED00_19 = [[22.24657657616991,113.93412996017086],[22.27371860755779,113.97055492149602]];
+        var layer_82D9SED00_19 = new L.imageOverlay(img_82D9SED00_19,
+                                              img_bounds_82D9SED00_19,
+                                              {pane: 'pane_82D9SED00_19', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_82D9SED00_19);
+        map.createPane('pane_82D9SEC00_20');
+        map.getPane('pane_82D9SEC00_20').style.zIndex = 420;
+        var img_82D9SEC00_20 = 'data/82D9SEC00_20.png';
+        var img_bounds_82D9SEC00_20 = [[22.246518205628682,113.8977448110843],[22.273668309625048,113.93417666067644]];
+        var layer_82D9SEC00_20 = new L.imageOverlay(img_82D9SEC00_20,
+                                              img_bounds_82D9SEC00_20,
+                                              {pane: 'pane_82D9SEC00_20', interactive: false, attribution: '地政總署（使用者提供之參考影像）'});
+        bounds_group.addLayer(layer_82D9SEC00_20);
+
+map.createPane('osm-base');map.getPane('osm-base').style.zIndex=200;
+var osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{pane:'osm-base',maxZoom:20,maxNativeZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>',referrerPolicy:'strict-origin-when-cross-origin'}).addTo(map);
+map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a> · <a href="https://github.com/qgis2web/qgis2web">qgis2web</a>');
+osm.on('tileerror',function(){document.getElementById('tile-notice').hidden=false;});
+document.getElementById('dismiss-notice').onclick=function(){document.getElementById('tile-notice').hidden=true;};
+var records=json_B16_archiveb16_metadata_updated_utf8_22.features.slice().sort(function(a,b){return a.properties['Photo ID'].localeCompare(b.properties['Photo ID']);});
+var palette={'Building level':'#1f78b4','Approximate':'#d12ed7','Village level':'#e67e22','Unknown':'#7d7d7d'};
+var precisionNames={'Building level':'建築／場地代表點','Approximate':'推估位置','Village level':'村落概略代表點','Unknown':'未定位'};
+function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function located(f){return !!(f.geometry&&f.geometry.type==='Point'&&f.geometry.coordinates.every(function(n){return typeof n==='number'&&Number.isFinite(n);}));}
+function imagePath(f){return 'images/'+String(f.properties['Photo path']||'').replace(/[\\/:]/g,'_').trim();}
+function attachImage(img,f){img.alt=f.properties['Photo ID']+' '+f.properties['Place / subject info'];img.onerror=function(){this.onerror=null;this.hidden=true;var msg=document.createElement('span');msg.className='image-missing';msg.textContent='圖片未能載入';this.parentNode.appendChild(msg);};img.src=imagePath(f);}
+var cluster=L.markerClusterGroup({showCoverageOnHover:false,spiderfyOnMaxZoom:true,spiderfyDistanceMultiplier:1.8,maxClusterRadius:45});
+var markers={},filtered=[];
+records.forEach(function(f){if(!located(f))return;var p=f.properties,precision=p['Location precision'];var cls=precision==='Approximate'?' approx':precision==='Village level'?' village':'';
+var marker=L.marker([f.geometry.coordinates[1],f.geometry.coordinates[0]],{icon:L.divIcon({className:'symbol',html:'<span class="pin'+cls+'"></span>',iconSize:[16,16],iconAnchor:[8,8]}),title:p['Photo ID']+' '+p['Place / subject info'],alt:p['Photo ID'],keyboard:true});
+marker.feature=f;var mini=document.createElement('div');mini.className='popup-mini';mini.innerHTML='<div class="record-id">'+esc(p['Photo ID'])+'</div><h3>'+esc(p['Place / subject info'])+'</h3><div>'+esc(p['拍攝日期']||'日期未記錄')+' · '+esc(precisionNames[precision]||precision)+'</div>';
+var img=document.createElement('img');mini.appendChild(img);var button=document.createElement('button');button.textContent='閱讀完整照片記錄';button.onclick=function(){openRecord(f);};mini.appendChild(button);marker.bindPopup(mini,{maxWidth:300,maxHeight:340});marker.on('popupopen',function(){img.onload=function(){marker.getPopup().update();};if(!img.getAttribute('src'))attachImage(img,f);});markers[p['Photo ID']]=marker;});
+cluster.addTo(map);
+function contextPopup(f,layer){var p=f.properties;layer.bindPopup('<div class="popup-mini"><h3>'+esc(p.name)+'</h3><p>'+esc(p.time_info)+'</p><p>照片參考：'+esc(p.photo_refs)+'</p><p>來源：'+esc(p.source)+'</p><p>'+esc(p.uncertainty)+'</p></div>');}
+map.createPane('context-vectors');map.getPane('context-vectors').style.zIndex=500;
+var buildings=L.geoJSON(json__23,{pane:'context-vectors',style:{color:'#df373a',weight:2,fill:false},onEachFeature:contextPopup});
+var roads=L.geoJSON(json__24,{pane:'context-vectors',style:{color:'#7a37cf',weight:3,dashArray:'3 7',lineCap:'round'},onEachFeature:contextPopup});
+var historic=[layer_82D9SEA00_15,layer_82D9SEB00_16,layer_82D9SWD00_17,layer_82D9SWB00_18,layer_82D9SED00_19,layer_82D9SEC00_20];
+var modern=[layer_9SEB_0,layer_9NEC_1,layer_9SEC_2,layer_9SEC_3,layer_9SED_4,layer_9SEA_5,layer_9NED_6,layer_9NED_7,layer_9NWD_8,layer_9NWB_9,layer_9NEB_10,layer_9NWD_11,layer_9SWB_12,layer_9NEA_13,layer_9SWD_14];
+var historicGroup=L.layerGroup(historic),modernGroup=L.layerGroup(modern);
+var layerControl=L.control({position:'topright'});
+layerControl.onAdd=function(){var box=L.DomUtil.create('div','layers-control');box.innerHTML='<details><summary>圖層與影像</summary><div class="layer-options"><label><input type="checkbox" id="points-toggle" checked>照片位置</label><label><input type="checkbox" id="roads-toggle">現代參考路段（紫色虛線）</label><label><input type="checkbox" id="buildings-toggle">現代建築輪廓（紅色外框）</label><hr><label><input type="checkbox" id="historic-toggle">1982航空影像 · 局部覆蓋</label><small>早於照片拍攝年代；底圖保留於覆蓋範圍之外。</small><label for="raster-opacity">參考影像不透明度 <span id="opacity-label">100%</span></label><input id="raster-opacity" type="range" min="10" max="100" value="100"><details><summary>其他參考圖幅（年份待核）</summary><small>依原匯出圖層保留；相同名稱未合併。開啟時會關閉1982影像。</small><div class="tile-list" id="tile-list"></div></details></div></details>';L.DomEvent.disableClickPropagation(box);L.DomEvent.disableScrollPropagation(box);return box;};layerControl.addTo(map);
+function toggleLayer(layer,on){if(on){if(!map.hasLayer(layer))map.addLayer(layer);}else if(map.hasLayer(layer))map.removeLayer(layer);}
+document.getElementById('points-toggle').onchange=function(){toggleLayer(cluster,this.checked);};
+document.getElementById('roads-toggle').onchange=function(){toggleLayer(roads,this.checked);};document.getElementById('buildings-toggle').onchange=function(){toggleLayer(buildings,this.checked);};
+document.getElementById('historic-toggle').onchange=function(){if(this.checked){modern.forEach(function(l){toggleLayer(l,false);});document.querySelectorAll('.tile-check').forEach(function(i){i.checked=false;});}toggleLayer(historicGroup,this.checked);};
+var tileNames=["9-SE-B", "9-NE-C", "9-SE-C", "9-SE-C\uff082\uff09", "9-SE-D", "9-SE-A", "9-NE-D", "9-NE-D\uff082\uff09", "9-NW-D", "9-NW-B", "9-NE-B", "9-NW-D\uff082\uff09", "9-SW-B", "9-NE-A", "9-SW-D"];
+modern.forEach(function(layer,i){var label=document.createElement('label'),input=document.createElement('input');input.type='checkbox';input.className='tile-check';input.onchange=function(){if(this.checked){document.getElementById('historic-toggle').checked=false;toggleLayer(historicGroup,false);}toggleLayer(layer,this.checked);};label.appendChild(input);label.appendChild(document.createTextNode(tileNames[i]));document.getElementById('tile-list').appendChild(label);});
+document.getElementById('raster-opacity').oninput=function(){var value=Number(this.value)/100;historic.concat(modern).forEach(function(l){l.setOpacity(value);});document.getElementById('opacity-label').textContent=this.value+'%';};
+function addOptions(id,key){var values=Array.from(new Set(records.map(function(f){return f.properties[key];}).filter(Boolean)));values.forEach(function(v){var option=document.createElement('option');option.value=v;option.textContent=v;document.getElementById(id).appendChild(option);});}
+addOptions('site-filter','site_group');addOptions('subject-filter','subject_group');
+function render(){var site=document.getElementById('site-filter').value,subject=document.getElementById('subject-filter').value,query=document.getElementById('search').value.trim().toLowerCase(),unknown=document.getElementById('unknown-only').checked;
+filtered=records.filter(function(f){var p=f.properties;return(!site||p.site_group===site)&&(!subject||p.subject_group===subject)&&(!unknown||!located(f))&&(!query||[p['Photo ID'],p['Place / subject info'],p['拍攝者'],p.site_group,p.subject_group].join(' ').toLowerCase().includes(query));});
+cluster.clearLayers();var selected=filtered.filter(located).map(function(f){return markers[f.properties['Photo ID']];});cluster.addLayers(selected);
+document.getElementById('result-count').textContent=filtered.length+' 張照片 · '+selected.length+' 筆已定位';document.getElementById('map-count').textContent='／ '+selected.length+' 筆';document.getElementById('fit-filtered').disabled=selected.length===0;
+var cards=document.getElementById('cards');cards.replaceChildren();if(!filtered.length){cards.innerHTML='<p class="empty">沒有符合條件的照片，請調整或重設篩選。</p>';return;}
+filtered.forEach(function(f){var p=f.properties,card=document.createElement('article');card.className='card';var thumb=document.createElement('button');thumb.className='thumb';thumb.setAttribute('aria-label','開啟 '+p['Photo ID']);var img=document.createElement('img');img.loading='lazy';attachImage(img,f);thumb.appendChild(img);thumb.onclick=function(){openRecord(f);};card.appendChild(thumb);var text=document.createElement('div');text.innerHTML='<div class="record-id">'+esc(p['Photo ID'])+' <span style="font-weight:400;color:#67766e">'+esc(p['拍攝日期']||'日期未記錄')+'</span></div>';var title=document.createElement('button');title.className='card-title';title.textContent=p['Place / subject info'];title.onclick=function(){openRecord(f);};text.appendChild(title);var bottom=document.createElement('div');bottom.className='card-bottom';bottom.innerHTML='<span class="badge"><i style="background:'+palette[p['Location precision']]+'"></i>'+esc(precisionNames[p['Location precision']]||p['Location precision'])+'</span>';if(located(f)){var locate=document.createElement('button');locate.className='locate';locate.textContent='地圖 ↗';locate.setAttribute('aria-label','在地圖查看 '+p['Photo ID']);locate.onclick=function(){locateRecord(f);};bottom.appendChild(locate);}text.appendChild(bottom);card.appendChild(text);cards.appendChild(card);});}
+function fitRecords(items){var coords=items.filter(located).map(function(f){return[f.geometry.coordinates[1],f.geometry.coordinates[0]];});if(coords.length)map.fitBounds(L.latLngBounds(coords),{padding:[45,45],maxZoom:17});}
+function locateRecord(f){if(!located(f))return;document.getElementById('points-toggle').checked=true;toggleLayer(cluster,true);if(window.innerWidth<=760)document.getElementById('map').scrollIntoView({behavior:'smooth',block:'center'});cluster.zoomToShowLayer(markers[f.properties['Photo ID']],function(){markers[f.properties['Photo ID']].openPopup();});}
+function openRecord(f){var p=f.properties;document.getElementById('record-dialog-title').textContent=p['Photo ID']+' · 照片記錄';var body=document.getElementById('record-body');body.replaceChildren();var photo=document.createElement('div');photo.className='photo-area';var img=document.createElement('img');attachImage(img,f);photo.appendChild(img);var link=document.createElement('a');link.href=imagePath(f);link.target='_blank';link.rel='noopener';link.textContent='在新分頁查看圖片 ↗';photo.appendChild(link);var meta=document.createElement('section');meta.className='metadata';meta.innerHTML='<div class="record-id">'+esc(p.site_group)+' / '+esc(p.subject_group)+'</div><h3>'+esc(p['Place / subject info'])+'</h3><div class="uncertainty"><strong>'+esc(precisionNames[p['Location precision']]||p['Location precision'])+'</strong><br>'+esc(p['Location uncertainty']||'定位依據未記錄')+'</div>';
+var fields=[['Photo ID','照片編號'],['照片流水號','照片流水號'],['Box no.','Box no.'],['拍攝日期','拍攝日期'],['底片編號','底片編號'],['拍攝者','拍攝者'],['經手人','整理者'],['整理日期','整理日期'],['Latitude','緯度'],['Longitude','經度'],['Location precision','定位精確度（原值）'],['Location source','定位來源'],['site_group','地點分類'],['subject_group','主題分類'],['Photo path','照片路徑（原值）']];var table=document.createElement('table');table.className='meta-table';fields.forEach(function(pair){var tr=document.createElement('tr');tr.innerHTML='<th scope="row">'+esc(pair[1])+'</th><td>'+esc(p[pair[0]]==null?'未記錄':p[pair[0]])+'</td>';table.appendChild(tr);});meta.appendChild(table);body.append(photo,meta);document.getElementById('record-dialog').showModal();}
+['site-filter','subject-filter','unknown-only'].forEach(function(id){document.getElementById(id).addEventListener('change',render);});document.getElementById('search').addEventListener('input',render);
+document.getElementById('reset').onclick=function(){document.getElementById('site-filter').value='';document.getElementById('subject-filter').value='';document.getElementById('search').value='';document.getElementById('unknown-only').checked=false;render();fitRecords(records);};document.getElementById('fit-filtered').onclick=function(){fitRecords(filtered);};document.getElementById('fit-all').onclick=function(){fitRecords(records);};
+document.getElementById('record-close').onclick=function(){document.getElementById('record-dialog').close();};document.getElementById('method-close').onclick=function(){document.getElementById('method-dialog').close();};document.getElementById('method-open').onclick=function(){document.getElementById('method-dialog').showModal();};
+render();fitRecords(records);var resizeTimer;window.addEventListener('resize',function(){clearTimeout(resizeTimer);resizeTimer=setTimeout(function(){map.invalidateSize();fitRecords(filtered);},120);});
+</script></body></html>
